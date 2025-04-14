@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
+import os
 
 # Load the trained model
 model = pickle.load(open("iris_model.pkl", "rb"))
